@@ -1,0 +1,1277 @@
+{
+  "pages_loaded": 107,
+  "pdf_extract_seconds": 1.061,
+  "provider_fallback_log": [
+    {
+      "attempted_provider": "openai-direct (text-embedding-3-small)",
+      "status": "failed_quota",
+      "error": "HTTP 429 Too Many Requests on direct OpenAI key prior to experiment."
+    },
+    {
+      "attempted_provider": "google-genai (gemini-embedding-001, Free Tier)",
+      "status": "failed_rate_limit",
+      "error": "429 RESOURCE_EXHAUSTED: Free Tier limit 100 embed_content requests/min hit during Strategy A batch 3."
+    },
+    {
+      "selected_provider": "openrouter (openai/text-embedding-3-small, 1536d)",
+      "status": "succeeded",
+      "note": "Switched prior to completing any strategy run; all three strategies A, B, and C use this identical model."
+    }
+  ],
+  "warnings_and_errors": [
+    {
+      "page": 55,
+      "book_page": 45,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": "1.5",
+      "status": "low_text_warning",
+      "raw_chars": 565,
+      "normalized_chars": 395,
+      "notes": [
+        "Short extracted text (<500 chars); may contain image-embedded screenshots, figures, or trailing lines."
+      ]
+    },
+    {
+      "page": 56,
+      "book_page": 46,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": null,
+      "status": "low_text_warning",
+      "raw_chars": 641,
+      "normalized_chars": 433,
+      "notes": [
+        "Short extracted text (<500 chars); may contain image-embedded screenshots, figures, or trailing lines."
+      ]
+    },
+    {
+      "page": 61,
+      "book_page": 51,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": "1.5",
+      "status": "low_text_warning",
+      "raw_chars": 533,
+      "normalized_chars": 354,
+      "notes": [
+        "Short extracted text (<500 chars); may contain image-embedded screenshots, figures, or trailing lines."
+      ]
+    },
+    {
+      "page": 402,
+      "book_page": 392,
+      "chapter": "Chapter 8",
+      "section": "8.2",
+      "footer_section": null,
+      "status": "math_glyph_warning",
+      "raw_chars": 4257,
+      "normalized_chars": 3814,
+      "notes": [
+        "Potential missing math-font symbol detected during pypdf extraction."
+      ]
+    },
+    {
+      "page": 413,
+      "book_page": 403,
+      "chapter": "Chapter 8",
+      "section": "8.3",
+      "footer_section": "8.3",
+      "status": "low_text_warning",
+      "raw_chars": 272,
+      "normalized_chars": 120,
+      "notes": [
+        "Short extracted text (<500 chars); may contain image-embedded screenshots, figures, or trailing lines."
+      ]
+    }
+  ],
+  "page_logs": [
+    {
+      "page": 19,
+      "book_page": null,
+      "chapter": "Chapter 1",
+      "section": "1.1",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 1806,
+      "normalized_chars": 1719,
+      "notes": []
+    },
+    {
+      "page": 20,
+      "book_page": 10,
+      "chapter": "Chapter 1",
+      "section": "1.1",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 3045,
+      "normalized_chars": 2730,
+      "notes": []
+    },
+    {
+      "page": 21,
+      "book_page": 11,
+      "chapter": "Chapter 1",
+      "section": "1.1",
+      "footer_section": "1.1",
+      "status": "ok",
+      "raw_chars": 3965,
+      "normalized_chars": 3760,
+      "notes": []
+    },
+    {
+      "page": 22,
+      "book_page": 12,
+      "chapter": "Chapter 1",
+      "section": "1.2",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4041,
+      "normalized_chars": 3723,
+      "notes": []
+    },
+    {
+      "page": 23,
+      "book_page": 13,
+      "chapter": "Chapter 1",
+      "section": "1.2",
+      "footer_section": "1.2",
+      "status": "ok",
+      "raw_chars": 4924,
+      "normalized_chars": 4778,
+      "notes": []
+    },
+    {
+      "page": 24,
+      "book_page": 14,
+      "chapter": "Chapter 1",
+      "section": "1.2",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 3672,
+      "normalized_chars": 3372,
+      "notes": []
+    },
+    {
+      "page": 25,
+      "book_page": 15,
+      "chapter": "Chapter 1",
+      "section": "1.2",
+      "footer_section": "1.2",
+      "status": "ok",
+      "raw_chars": 3752,
+      "normalized_chars": 3592,
+      "notes": []
+    },
+    {
+      "page": 26,
+      "book_page": 16,
+      "chapter": "Chapter 1",
+      "section": "1.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 3926,
+      "normalized_chars": 3597,
+      "notes": []
+    },
+    {
+      "page": 27,
+      "book_page": 17,
+      "chapter": "Chapter 1",
+      "section": "1.3",
+      "footer_section": "1.3",
+      "status": "ok",
+      "raw_chars": 3731,
+      "normalized_chars": 2503,
+      "notes": []
+    },
+    {
+      "page": 28,
+      "book_page": 18,
+      "chapter": "Chapter 1",
+      "section": "1.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 3943,
+      "normalized_chars": 3618,
+      "notes": []
+    },
+    {
+      "page": 29,
+      "book_page": 19,
+      "chapter": "Chapter 1",
+      "section": "1.3",
+      "footer_section": "1.3",
+      "status": "ok",
+      "raw_chars": 3697,
+      "normalized_chars": 3532,
+      "notes": []
+    },
+    {
+      "page": 30,
+      "book_page": 20,
+      "chapter": "Chapter 1",
+      "section": "1.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 2444,
+      "normalized_chars": 1650,
+      "notes": []
+    },
+    {
+      "page": 31,
+      "book_page": 21,
+      "chapter": "Chapter 1",
+      "section": "1.3",
+      "footer_section": "1.3",
+      "status": "ok",
+      "raw_chars": 3210,
+      "normalized_chars": 1957,
+      "notes": []
+    },
+    {
+      "page": 32,
+      "book_page": 22,
+      "chapter": "Chapter 1",
+      "section": "1.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 2182,
+      "normalized_chars": 1878,
+      "notes": []
+    },
+    {
+      "page": 33,
+      "book_page": 23,
+      "chapter": "Chapter 1",
+      "section": "1.3",
+      "footer_section": "1.3",
+      "status": "ok",
+      "raw_chars": 2102,
+      "normalized_chars": 1826,
+      "notes": []
+    },
+    {
+      "page": 34,
+      "book_page": 24,
+      "chapter": "Chapter 1",
+      "section": "1.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 2749,
+      "normalized_chars": 2482,
+      "notes": []
+    },
+    {
+      "page": 35,
+      "book_page": 25,
+      "chapter": "Chapter 1",
+      "section": "1.3",
+      "footer_section": "1.3",
+      "status": "ok",
+      "raw_chars": 1571,
+      "normalized_chars": 1340,
+      "notes": []
+    },
+    {
+      "page": 36,
+      "book_page": 26,
+      "chapter": "Chapter 1",
+      "section": "1.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 1151,
+      "normalized_chars": 884,
+      "notes": []
+    },
+    {
+      "page": 37,
+      "book_page": 27,
+      "chapter": "Chapter 1",
+      "section": "1.3",
+      "footer_section": "1.3",
+      "status": "ok",
+      "raw_chars": 2094,
+      "normalized_chars": 1829,
+      "notes": []
+    },
+    {
+      "page": 38,
+      "book_page": 28,
+      "chapter": "Chapter 1",
+      "section": "1.4",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 2702,
+      "normalized_chars": 2347,
+      "notes": []
+    },
+    {
+      "page": 39,
+      "book_page": 29,
+      "chapter": "Chapter 1",
+      "section": "1.4",
+      "footer_section": "1.4",
+      "status": "ok",
+      "raw_chars": 3792,
+      "normalized_chars": 3643,
+      "notes": []
+    },
+    {
+      "page": 40,
+      "book_page": 30,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 3172,
+      "normalized_chars": 2843,
+      "notes": []
+    },
+    {
+      "page": 41,
+      "book_page": 31,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": "1.5",
+      "status": "ok",
+      "raw_chars": 2302,
+      "normalized_chars": 2031,
+      "notes": []
+    },
+    {
+      "page": 42,
+      "book_page": 32,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 1202,
+      "normalized_chars": 956,
+      "notes": []
+    },
+    {
+      "page": 43,
+      "book_page": 33,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": "1.5",
+      "status": "ok",
+      "raw_chars": 1419,
+      "normalized_chars": 1177,
+      "notes": []
+    },
+    {
+      "page": 44,
+      "book_page": 34,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 906,
+      "normalized_chars": 659,
+      "notes": []
+    },
+    {
+      "page": 45,
+      "book_page": 35,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": "1.5",
+      "status": "ok",
+      "raw_chars": 2131,
+      "normalized_chars": 1957,
+      "notes": []
+    },
+    {
+      "page": 46,
+      "book_page": 36,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 1342,
+      "normalized_chars": 984,
+      "notes": []
+    },
+    {
+      "page": 47,
+      "book_page": 37,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": "1.5",
+      "status": "ok",
+      "raw_chars": 1276,
+      "normalized_chars": 1045,
+      "notes": []
+    },
+    {
+      "page": 48,
+      "book_page": 38,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 1152,
+      "normalized_chars": 890,
+      "notes": []
+    },
+    {
+      "page": 49,
+      "book_page": 39,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": "1.5",
+      "status": "ok",
+      "raw_chars": 1588,
+      "normalized_chars": 1404,
+      "notes": []
+    },
+    {
+      "page": 50,
+      "book_page": 40,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 918,
+      "normalized_chars": 677,
+      "notes": []
+    },
+    {
+      "page": 51,
+      "book_page": 41,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": "1.5",
+      "status": "ok",
+      "raw_chars": 989,
+      "normalized_chars": 712,
+      "notes": []
+    },
+    {
+      "page": 52,
+      "book_page": 42,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 1541,
+      "normalized_chars": 1093,
+      "notes": []
+    },
+    {
+      "page": 53,
+      "book_page": 43,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": "1.5",
+      "status": "ok",
+      "raw_chars": 749,
+      "normalized_chars": 566,
+      "notes": []
+    },
+    {
+      "page": 54,
+      "book_page": 44,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 1338,
+      "normalized_chars": 1013,
+      "notes": []
+    },
+    {
+      "page": 55,
+      "book_page": 45,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": "1.5",
+      "status": "low_text_warning",
+      "raw_chars": 565,
+      "normalized_chars": 395,
+      "notes": [
+        "Short extracted text (<500 chars); may contain image-embedded screenshots, figures, or trailing lines."
+      ]
+    },
+    {
+      "page": 56,
+      "book_page": 46,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": null,
+      "status": "low_text_warning",
+      "raw_chars": 641,
+      "normalized_chars": 433,
+      "notes": [
+        "Short extracted text (<500 chars); may contain image-embedded screenshots, figures, or trailing lines."
+      ]
+    },
+    {
+      "page": 57,
+      "book_page": 47,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": "1.5",
+      "status": "ok",
+      "raw_chars": 1541,
+      "normalized_chars": 1372,
+      "notes": []
+    },
+    {
+      "page": 58,
+      "book_page": 48,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 1055,
+      "normalized_chars": 833,
+      "notes": []
+    },
+    {
+      "page": 59,
+      "book_page": 49,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": "1.5",
+      "status": "ok",
+      "raw_chars": 844,
+      "normalized_chars": 659,
+      "notes": []
+    },
+    {
+      "page": 60,
+      "book_page": 50,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 796,
+      "normalized_chars": 573,
+      "notes": []
+    },
+    {
+      "page": 61,
+      "book_page": 51,
+      "chapter": "Chapter 1",
+      "section": "1.5",
+      "footer_section": "1.5",
+      "status": "low_text_warning",
+      "raw_chars": 533,
+      "normalized_chars": 354,
+      "notes": [
+        "Short extracted text (<500 chars); may contain image-embedded screenshots, figures, or trailing lines."
+      ]
+    },
+    {
+      "page": 67,
+      "book_page": null,
+      "chapter": "Chapter 2",
+      "section": "2.0",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 2408,
+      "normalized_chars": 2334,
+      "notes": []
+    },
+    {
+      "page": 68,
+      "book_page": 58,
+      "chapter": "Chapter 2",
+      "section": "2.1",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4124,
+      "normalized_chars": 3499,
+      "notes": []
+    },
+    {
+      "page": 69,
+      "book_page": 59,
+      "chapter": "Chapter 2",
+      "section": "2.1",
+      "footer_section": "2.1",
+      "status": "ok",
+      "raw_chars": 3926,
+      "normalized_chars": 2911,
+      "notes": []
+    },
+    {
+      "page": 70,
+      "book_page": 60,
+      "chapter": "Chapter 2",
+      "section": "2.1",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 3748,
+      "normalized_chars": 3289,
+      "notes": []
+    },
+    {
+      "page": 71,
+      "book_page": 61,
+      "chapter": "Chapter 2",
+      "section": "2.2",
+      "footer_section": "2.2",
+      "status": "ok",
+      "raw_chars": 3955,
+      "normalized_chars": 3799,
+      "notes": []
+    },
+    {
+      "page": 72,
+      "book_page": 62,
+      "chapter": "Chapter 2",
+      "section": "2.2",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4668,
+      "normalized_chars": 4302,
+      "notes": []
+    },
+    {
+      "page": 73,
+      "book_page": 63,
+      "chapter": "Chapter 2",
+      "section": "2.2",
+      "footer_section": "2.2",
+      "status": "ok",
+      "raw_chars": 4730,
+      "normalized_chars": 4408,
+      "notes": []
+    },
+    {
+      "page": 74,
+      "book_page": 64,
+      "chapter": "Chapter 2",
+      "section": "2.2",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4892,
+      "normalized_chars": 4410,
+      "notes": []
+    },
+    {
+      "page": 75,
+      "book_page": 65,
+      "chapter": "Chapter 2",
+      "section": "2.2",
+      "footer_section": "2.2",
+      "status": "ok",
+      "raw_chars": 4410,
+      "normalized_chars": 4173,
+      "notes": []
+    },
+    {
+      "page": 76,
+      "book_page": 66,
+      "chapter": "Chapter 2",
+      "section": "2.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 3649,
+      "normalized_chars": 3294,
+      "notes": []
+    },
+    {
+      "page": 77,
+      "book_page": 67,
+      "chapter": "Chapter 2",
+      "section": "2.3",
+      "footer_section": "2.3",
+      "status": "ok",
+      "raw_chars": 3876,
+      "normalized_chars": 2747,
+      "notes": []
+    },
+    {
+      "page": 78,
+      "book_page": 68,
+      "chapter": "Chapter 2",
+      "section": "2.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4078,
+      "normalized_chars": 3707,
+      "notes": []
+    },
+    {
+      "page": 79,
+      "book_page": 69,
+      "chapter": "Chapter 2",
+      "section": "2.3",
+      "footer_section": "2.3",
+      "status": "ok",
+      "raw_chars": 1212,
+      "normalized_chars": 1026,
+      "notes": []
+    },
+    {
+      "page": 80,
+      "book_page": 70,
+      "chapter": "Chapter 2",
+      "section": "2.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 2445,
+      "normalized_chars": 2154,
+      "notes": []
+    },
+    {
+      "page": 81,
+      "book_page": 71,
+      "chapter": "Chapter 2",
+      "section": "2.3",
+      "footer_section": "2.3",
+      "status": "ok",
+      "raw_chars": 2771,
+      "normalized_chars": 2523,
+      "notes": []
+    },
+    {
+      "page": 82,
+      "book_page": 72,
+      "chapter": "Chapter 2",
+      "section": "2.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 3490,
+      "normalized_chars": 3171,
+      "notes": []
+    },
+    {
+      "page": 83,
+      "book_page": 73,
+      "chapter": "Chapter 2",
+      "section": "2.3",
+      "footer_section": "2.3",
+      "status": "ok",
+      "raw_chars": 2891,
+      "normalized_chars": 2726,
+      "notes": []
+    },
+    {
+      "page": 84,
+      "book_page": 74,
+      "chapter": "Chapter 2",
+      "section": "2.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 3019,
+      "normalized_chars": 2599,
+      "notes": []
+    },
+    {
+      "page": 85,
+      "book_page": 75,
+      "chapter": "Chapter 2",
+      "section": "2.3",
+      "footer_section": "2.3",
+      "status": "ok",
+      "raw_chars": 1796,
+      "normalized_chars": 1490,
+      "notes": []
+    },
+    {
+      "page": 86,
+      "book_page": 76,
+      "chapter": "Chapter 2",
+      "section": "2.4",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 3985,
+      "normalized_chars": 3599,
+      "notes": []
+    },
+    {
+      "page": 87,
+      "book_page": 77,
+      "chapter": "Chapter 2",
+      "section": "2.4",
+      "footer_section": "2.4",
+      "status": "ok",
+      "raw_chars": 4499,
+      "normalized_chars": 4169,
+      "notes": []
+    },
+    {
+      "page": 88,
+      "book_page": 78,
+      "chapter": "Chapter 2",
+      "section": "2.4",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 2192,
+      "normalized_chars": 1476,
+      "notes": []
+    },
+    {
+      "page": 89,
+      "book_page": 79,
+      "chapter": "Chapter 2",
+      "section": "2.4",
+      "footer_section": "2.4",
+      "status": "ok",
+      "raw_chars": 2073,
+      "normalized_chars": 1044,
+      "notes": []
+    },
+    {
+      "page": 90,
+      "book_page": 80,
+      "chapter": "Chapter 2",
+      "section": "2.4",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4927,
+      "normalized_chars": 3204,
+      "notes": []
+    },
+    {
+      "page": 91,
+      "book_page": 81,
+      "chapter": "Chapter 2",
+      "section": "2.4",
+      "footer_section": "2.4",
+      "status": "ok",
+      "raw_chars": 3631,
+      "normalized_chars": 2735,
+      "notes": []
+    },
+    {
+      "page": 92,
+      "book_page": 82,
+      "chapter": "Chapter 2",
+      "section": "2.4",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4265,
+      "normalized_chars": 3096,
+      "notes": []
+    },
+    {
+      "page": 93,
+      "book_page": 83,
+      "chapter": "Chapter 2",
+      "section": "2.4",
+      "footer_section": "2.4",
+      "status": "ok",
+      "raw_chars": 4671,
+      "normalized_chars": 3377,
+      "notes": []
+    },
+    {
+      "page": 94,
+      "book_page": 84,
+      "chapter": "Chapter 2",
+      "section": "2.4",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 5290,
+      "normalized_chars": 4966,
+      "notes": []
+    },
+    {
+      "page": 95,
+      "book_page": 85,
+      "chapter": "Chapter 2",
+      "section": "2.4",
+      "footer_section": "2.4",
+      "status": "ok",
+      "raw_chars": 3149,
+      "normalized_chars": 1754,
+      "notes": []
+    },
+    {
+      "page": 96,
+      "book_page": 86,
+      "chapter": "Chapter 2",
+      "section": "2.4",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4066,
+      "normalized_chars": 1874,
+      "notes": []
+    },
+    {
+      "page": 97,
+      "book_page": 87,
+      "chapter": "Chapter 2",
+      "section": "2.4",
+      "footer_section": "2.4",
+      "status": "ok",
+      "raw_chars": 5006,
+      "normalized_chars": 3122,
+      "notes": []
+    },
+    {
+      "page": 98,
+      "book_page": 88,
+      "chapter": "Chapter 2",
+      "section": "2.5",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4263,
+      "normalized_chars": 3873,
+      "notes": []
+    },
+    {
+      "page": 99,
+      "book_page": 89,
+      "chapter": "Chapter 2",
+      "section": "2.5",
+      "footer_section": "2.5",
+      "status": "ok",
+      "raw_chars": 3530,
+      "normalized_chars": 3259,
+      "notes": []
+    },
+    {
+      "page": 100,
+      "book_page": 90,
+      "chapter": "Chapter 2",
+      "section": "2.5",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 3704,
+      "normalized_chars": 2945,
+      "notes": []
+    },
+    {
+      "page": 101,
+      "book_page": 91,
+      "chapter": "Chapter 2",
+      "section": "2.5",
+      "footer_section": "2.5",
+      "status": "ok",
+      "raw_chars": 4116,
+      "normalized_chars": 3377,
+      "notes": []
+    },
+    {
+      "page": 102,
+      "book_page": 92,
+      "chapter": "Chapter 2",
+      "section": "2.5",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 3955,
+      "normalized_chars": 3418,
+      "notes": []
+    },
+    {
+      "page": 103,
+      "book_page": 93,
+      "chapter": "Chapter 2",
+      "section": "2.5",
+      "footer_section": "2.5",
+      "status": "ok",
+      "raw_chars": 1454,
+      "normalized_chars": 1253,
+      "notes": []
+    },
+    {
+      "page": 387,
+      "book_page": null,
+      "chapter": "Chapter 8",
+      "section": "8.0",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 2238,
+      "normalized_chars": 2158,
+      "notes": []
+    },
+    {
+      "page": 388,
+      "book_page": 378,
+      "chapter": "Chapter 8",
+      "section": "8.1",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4469,
+      "normalized_chars": 4092,
+      "notes": []
+    },
+    {
+      "page": 389,
+      "book_page": 379,
+      "chapter": "Chapter 8",
+      "section": "8.1",
+      "footer_section": "8.1",
+      "status": "ok",
+      "raw_chars": 1917,
+      "normalized_chars": 1605,
+      "notes": []
+    },
+    {
+      "page": 390,
+      "book_page": 380,
+      "chapter": "Chapter 8",
+      "section": "8.1",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4863,
+      "normalized_chars": 4491,
+      "notes": []
+    },
+    {
+      "page": 391,
+      "book_page": 381,
+      "chapter": "Chapter 8",
+      "section": "8.1",
+      "footer_section": "8.1",
+      "status": "ok",
+      "raw_chars": 3745,
+      "normalized_chars": 3519,
+      "notes": []
+    },
+    {
+      "page": 392,
+      "book_page": 382,
+      "chapter": "Chapter 8",
+      "section": "8.1",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4386,
+      "normalized_chars": 3992,
+      "notes": []
+    },
+    {
+      "page": 393,
+      "book_page": 383,
+      "chapter": "Chapter 8",
+      "section": "8.1",
+      "footer_section": "8.1",
+      "status": "ok",
+      "raw_chars": 3832,
+      "normalized_chars": 3651,
+      "notes": []
+    },
+    {
+      "page": 394,
+      "book_page": 384,
+      "chapter": "Chapter 8",
+      "section": "8.1",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4340,
+      "normalized_chars": 3967,
+      "notes": []
+    },
+    {
+      "page": 395,
+      "book_page": 385,
+      "chapter": "Chapter 8",
+      "section": "8.1",
+      "footer_section": "8.1",
+      "status": "ok",
+      "raw_chars": 3939,
+      "normalized_chars": 3619,
+      "notes": []
+    },
+    {
+      "page": 396,
+      "book_page": 386,
+      "chapter": "Chapter 8",
+      "section": "8.1",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4551,
+      "normalized_chars": 4009,
+      "notes": []
+    },
+    {
+      "page": 397,
+      "book_page": 387,
+      "chapter": "Chapter 8",
+      "section": "8.1",
+      "footer_section": "8.1",
+      "status": "ok",
+      "raw_chars": 4066,
+      "normalized_chars": 3861,
+      "notes": []
+    },
+    {
+      "page": 398,
+      "book_page": 388,
+      "chapter": "Chapter 8",
+      "section": "8.2",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 3934,
+      "normalized_chars": 3529,
+      "notes": []
+    },
+    {
+      "page": 399,
+      "book_page": 389,
+      "chapter": "Chapter 8",
+      "section": "8.2",
+      "footer_section": "8.2",
+      "status": "ok",
+      "raw_chars": 4794,
+      "normalized_chars": 4648,
+      "notes": []
+    },
+    {
+      "page": 400,
+      "book_page": 390,
+      "chapter": "Chapter 8",
+      "section": "8.2",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4085,
+      "normalized_chars": 3548,
+      "notes": []
+    },
+    {
+      "page": 401,
+      "book_page": 391,
+      "chapter": "Chapter 8",
+      "section": "8.2",
+      "footer_section": "8.2",
+      "status": "ok",
+      "raw_chars": 4393,
+      "normalized_chars": 4243,
+      "notes": []
+    },
+    {
+      "page": 402,
+      "book_page": 392,
+      "chapter": "Chapter 8",
+      "section": "8.2",
+      "footer_section": null,
+      "status": "math_glyph_warning",
+      "raw_chars": 4257,
+      "normalized_chars": 3814,
+      "notes": [
+        "Potential missing math-font symbol detected during pypdf extraction."
+      ]
+    },
+    {
+      "page": 403,
+      "book_page": 393,
+      "chapter": "Chapter 8",
+      "section": "8.2",
+      "footer_section": "8.2",
+      "status": "ok",
+      "raw_chars": 4033,
+      "normalized_chars": 3853,
+      "notes": []
+    },
+    {
+      "page": 404,
+      "book_page": 394,
+      "chapter": "Chapter 8",
+      "section": "8.2",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 2258,
+      "normalized_chars": 1949,
+      "notes": []
+    },
+    {
+      "page": 405,
+      "book_page": 395,
+      "chapter": "Chapter 8",
+      "section": "8.3",
+      "footer_section": "8.3",
+      "status": "ok",
+      "raw_chars": 4096,
+      "normalized_chars": 3872,
+      "notes": []
+    },
+    {
+      "page": 406,
+      "book_page": 396,
+      "chapter": "Chapter 8",
+      "section": "8.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 1911,
+      "normalized_chars": 1579,
+      "notes": []
+    },
+    {
+      "page": 407,
+      "book_page": 397,
+      "chapter": "Chapter 8",
+      "section": "8.3",
+      "footer_section": "8.3",
+      "status": "ok",
+      "raw_chars": 2863,
+      "normalized_chars": 2554,
+      "notes": []
+    },
+    {
+      "page": 408,
+      "book_page": 398,
+      "chapter": "Chapter 8",
+      "section": "8.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 2460,
+      "normalized_chars": 1116,
+      "notes": []
+    },
+    {
+      "page": 409,
+      "book_page": 399,
+      "chapter": "Chapter 8",
+      "section": "8.3",
+      "footer_section": "8.3",
+      "status": "ok",
+      "raw_chars": 977,
+      "normalized_chars": 699,
+      "notes": []
+    },
+    {
+      "page": 410,
+      "book_page": 400,
+      "chapter": "Chapter 8",
+      "section": "8.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 2588,
+      "normalized_chars": 1544,
+      "notes": []
+    },
+    {
+      "page": 411,
+      "book_page": 401,
+      "chapter": "Chapter 8",
+      "section": "8.3",
+      "footer_section": "8.3",
+      "status": "ok",
+      "raw_chars": 3241,
+      "normalized_chars": 2977,
+      "notes": []
+    },
+    {
+      "page": 412,
+      "book_page": 402,
+      "chapter": "Chapter 8",
+      "section": "8.3",
+      "footer_section": null,
+      "status": "ok",
+      "raw_chars": 4822,
+      "normalized_chars": 4448,
+      "notes": []
+    },
+    {
+      "page": 413,
+      "book_page": 403,
+      "chapter": "Chapter 8",
+      "section": "8.3",
+      "footer_section": "8.3",
+      "status": "low_text_warning",
+      "raw_chars": 272,
+      "normalized_chars": 120,
+      "notes": [
+        "Short extracted text (<500 chars); may contain image-embedded screenshots, figures, or trailing lines."
+      ]
+    }
+  ]
+}

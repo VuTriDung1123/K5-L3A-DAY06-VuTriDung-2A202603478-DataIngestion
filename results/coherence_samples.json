@@ -1,0 +1,364 @@
+{
+  "samples": [
+    {
+      "anchor_id": "a01",
+      "page": 20,
+      "chapter": "Chapter 1",
+      "section": "1.1",
+      "anchor_text": "Technological advancement brought about the proliferation of data, muddying the boundaries between these jobs",
+      "strategies": {
+        "A": [
+          {
+            "chunk_id": "openstax-pds-2025:p020:fixed:c002",
+            "chars": 499,
+            "chapter": "Chapter 1",
+            "section": "1.1",
+            "text": "data. Technological advancement brought about the proliferation of data, muddying the boundaries between these jobs, as shown in Figure 1.2. Now, it is expected that a data scientist or data science team will have some expertise in all three domains.\n\nFigure 1.2 The Field of Data Science\n\nOne good example of this is the development of personal cell phones. In the past, households typically had only one landline telephone, and the only data that was generated with the telephone was the list of p"
+          }
+        ],
+        "B": [
+          {
+            "chunk_id": "openstax-pds-2025:p020:para:c001",
+            "chars": 704,
+            "chapter": "Chapter 1",
+            "section": "1.1",
+            "text": "To be more specific, data collection was considered to be the province of so-called domain experts (e.g., doctors for medical data, psychologists for psychological data, business analysts for sales, logistic, and marketing data, etc.) as they had a full context of the data; data management was for computer scientists/engineers as they knew how to store and process data in computing systems (e.g., a single computer, a server, a data warehouse); and data analysis was for statisticians and mathematicians as they knew how to derive some meaningful insights from data. Technological advancement brought about the proliferation of data, muddying the boundaries between these jobs, as shown in Figure 1.2."
+          }
+        ],
+        "C": [
+          {
+            "chunk_id": "openstax-pds-2025:p020:para:c001",
+            "chars": 704,
+            "chapter": "Chapter 1",
+            "section": "1.1",
+            "text": "To be more specific, data collection was considered to be the province of so-called domain experts (e.g., doctors for medical data, psychologists for psychological data, business analysts for sales, logistic, and marketing data, etc.) as they had a full context of the data; data management was for computer scientists/engineers as they knew how to store and process data in computing systems (e.g., a single computer, a server, a data warehouse); and data analysis was for statisticians and mathematicians as they knew how to derive some meaningful insights from data. Technological advancement brought about the proliferation of data, muddying the boundaries between these jobs, as shown in Figure 1.2."
+          }
+        ]
+      }
+    },
+    {
+      "anchor_id": "a02",
+      "page": 21,
+      "chapter": "Chapter 1",
+      "section": "1.1",
+      "anchor_text": "The first step in the data science cycle is a precise definition of the problem statement",
+      "strategies": {
+        "A": [
+          {
+            "chunk_id": "openstax-pds-2025:p021:fixed:c001",
+            "chars": 500,
+            "chapter": "Chapter 1",
+            "section": "1.1",
+            "text": "of the time each, depending on the job.\n\nProblem Definition, Data Collection, and Data Preparation\n\nThe first step in the data science cycle is a precise definition of the problem statement to establish clear objectives for the goal and scope of the data analysis project. Once the problem has been well defined, the data must be generated and collected. Data collection is the systematic process of gathering information on variables of interest. Data is often collected purposefully by domain exper"
+          }
+        ],
+        "B": [
+          {
+            "chunk_id": "openstax-pds-2025:p021:para:c001",
+            "chars": 772,
+            "chapter": "Chapter 1",
+            "section": "1.1",
+            "text": "Problem Definition, Data Collection, and Data Preparation\n\nThe first step in the data science cycle is a precise definition of the problem statement to establish clear objectives for the goal and scope of the data analysis project. Once the problem has been well defined, the data must be generated and collected. Data collection is the systematic process of gathering information on variables of interest. Data is often collected purposefully by domain experts to find answers to predefined problems. One example is data on customer responses to a product satisfaction survey. These survey questions will likely be crafted by the product sales and marketing representatives, who likely have a specific plan for how they wish to use the response data once it is collected."
+          }
+        ],
+        "C": [
+          {
+            "chunk_id": "openstax-pds-2025:p021:para:c001",
+            "chars": 772,
+            "chapter": "Chapter 1",
+            "section": "1.1",
+            "text": "Problem Definition, Data Collection, and Data Preparation\n\nThe first step in the data science cycle is a precise definition of the problem statement to establish clear objectives for the goal and scope of the data analysis project. Once the problem has been well defined, the data must be generated and collected. Data collection is the systematic process of gathering information on variables of interest. Data is often collected purposefully by domain experts to find answers to predefined problems. One example is data on customer responses to a product satisfaction survey. These survey questions will likely be crafted by the product sales and marketing representatives, who likely have a specific plan for how they wish to use the response data once it is collected."
+          }
+        ]
+      }
+    },
+    {
+      "anchor_id": "a03",
+      "page": 23,
+      "chapter": "Chapter 1",
+      "section": "1.2",
+      "anchor_text": "Among other insights, the executives discovered that strawberry Pop-Tart sales increased by about sevenfold",
+      "strategies": {
+        "A": [
+          {
+            "chunk_id": "openstax-pds-2025:p023:fixed:c002",
+            "chars": 500,
+            "chapter": "Chapter 1",
+            "section": "1.2",
+            "text": "hich hit several weeks earlier, and then come up with some forecasts about product demand ahead of Frances (Hays, 2004). Among other insights, the executives discovered that strawberry Pop-Tart sales increased by about sevenfold during that time. As a result, in the days before Hurricane Frances, Walmart shipped extra supplies of strawberry Pop-Tarts to stores in the storm’s path (Hays, 2004). The analysis also provided insights on how many checkout associates to assign at different times of the"
+          }
+        ],
+        "B": [
+          {
+            "chunk_id": "openstax-pds-2025:p023:para:c001",
+            "chars": 699,
+            "chapter": "Chapter 1",
+            "section": "1.2",
+            "text": "A week before the hurricane’s arrival, staff were asked to look back at their data on sales during Hurricane Charley, which hit several weeks earlier, and then come up with some forecasts about product demand ahead of Frances (Hays, 2004). Among other insights, the executives discovered that strawberry Pop-Tart sales increased by about sevenfold during that time. As a result, in the days before Hurricane Frances, Walmart shipped extra supplies of strawberry Pop-Tarts to stores in the storm’s path (Hays, 2004). The analysis also provided insights on how many checkout associates to assign at different times of the day, where to place popular products, and many other sales and product details."
+          }
+        ],
+        "C": [
+          {
+            "chunk_id": "openstax-pds-2025:p023:para:c001",
+            "chars": 699,
+            "chapter": "Chapter 1",
+            "section": "1.2",
+            "text": "A week before the hurricane’s arrival, staff were asked to look back at their data on sales during Hurricane Charley, which hit several weeks earlier, and then come up with some forecasts about product demand ahead of Frances (Hays, 2004). Among other insights, the executives discovered that strawberry Pop-Tart sales increased by about sevenfold during that time. As a result, in the days before Hurricane Frances, Walmart shipped extra supplies of strawberry Pop-Tarts to stores in the storm’s path (Hays, 2004). The analysis also provided insights on how many checkout associates to assign at different times of the day, where to place popular products, and many other sales and product details."
+          }
+        ]
+      }
+    },
+    {
+      "anchor_id": "a04",
+      "page": 28,
+      "chapter": "Chapter 1",
+      "section": "1.3",
+      "anchor_text": "Some data are quantitative, which means that they are measured and expressed using numbers.",
+      "strategies": {
+        "A": [
+          {
+            "chunk_id": "openstax-pds-2025:p028:fixed:c002",
+            "chars": 499,
+            "chapter": "Chapter 1",
+            "section": "1.3",
+            "text": "ew data, and how often we make data-driven decisions without even noticing it. You might have noticed that data comes in various types. Some data are quantitative, which means that they are measured and expressed using numbers. Quantitative data deals with quantities and amounts and is usually analyzed using statistical methods. Examples include numerical measurements like height, weight, temperature, heart rate, and sales figures. Qualitative data are non-numerical data that generally describe"
+          }
+        ],
+        "B": [
+          {
+            "chunk_id": "openstax-pds-2025:p028:para:c002",
+            "chars": 756,
+            "chapter": "Chapter 1",
+            "section": "1.3",
+            "text": "Types of Data\n\nThe previous sections talked about how much our daily life is surrounded by data, how much our daily life itself produces new data, and how often we make data-driven decisions without even noticing it. You might have noticed that data comes in various types. Some data are quantitative, which means that they are measured and expressed using numbers. Quantitative data deals with quantities and amounts and is usually analyzed using statistical methods. Examples include numerical measurements like height, weight, temperature, heart rate, and sales figures. Qualitative data are non-numerical data that generally describe subjective attributes or characteristics and are analyzed using methods such as thematic analysis or content analysis."
+          }
+        ],
+        "C": [
+          {
+            "chunk_id": "openstax-pds-2025:p028:para:c002",
+            "chars": 756,
+            "chapter": "Chapter 1",
+            "section": "1.3",
+            "text": "Types of Data\n\nThe previous sections talked about how much our daily life is surrounded by data, how much our daily life itself produces new data, and how often we make data-driven decisions without even noticing it. You might have noticed that data comes in various types. Some data are quantitative, which means that they are measured and expressed using numbers. Quantitative data deals with quantities and amounts and is usually analyzed using statistical methods. Examples include numerical measurements like height, weight, temperature, heart rate, and sales figures. Qualitative data are non-numerical data that generally describe subjective attributes or characteristics and are analyzed using methods such as thematic analysis or content analysis."
+          }
+        ]
+      }
+    },
+    {
+      "anchor_id": "a05",
+      "page": 68,
+      "chapter": "Chapter 2",
+      "section": "2.1",
+      "anchor_text": "Data collection refers to the systematic and well-organized process of gathering",
+      "strategies": {
+        "A": [
+          {
+            "chunk_id": "openstax-pds-2025:p068:fixed:c000",
+            "chars": 500,
+            "chapter": "Chapter 2",
+            "section": "2.1",
+            "text": "business success.\n\n2.1 Overview of Data Collection Methods\n\nLearning Outcomes\n\nBy the end of this section, you should be able to:\n• 2.1.1 Define data collection and its role in data science.\n• 2.1.2 Describe different data collection methods commonly used in data science, such as surveys and experiments.\n• 2.1.3 Recognize scenarios where specific data collection methods are most appropriate.\n\nData collection refers to the systematic and well-organized process of gathering and accurately conveyin"
+          }
+        ],
+        "B": [
+          {
+            "chunk_id": "openstax-pds-2025:p068:para:c001",
+            "chars": 644,
+            "chapter": "Chapter 2",
+            "section": "2.1",
+            "text": "Data collection refers to the systematic and well-organized process of gathering and accurately conveying important information and aspects related to a specific phenomenon or event. This involves using statistical tools and techniques to collect data, identify its attributes, and capture relevant contextual information. The gathered data is crucial for making sound interpretations and gaining meaningful insights. Additionally, it is important to take note of the environment and geographic location from where the data was obtained, as it can significantly influence the decision-making process and overall conclusions drawn from the data."
+          }
+        ],
+        "C": [
+          {
+            "chunk_id": "openstax-pds-2025:p068:para:c001",
+            "chars": 644,
+            "chapter": "Chapter 2",
+            "section": "2.1",
+            "text": "Data collection refers to the systematic and well-organized process of gathering and accurately conveying important information and aspects related to a specific phenomenon or event. This involves using statistical tools and techniques to collect data, identify its attributes, and capture relevant contextual information. The gathered data is crucial for making sound interpretations and gaining meaningful insights. Additionally, it is important to take note of the environment and geographic location from where the data was obtained, as it can significantly influence the decision-making process and overall conclusions drawn from the data."
+          }
+        ]
+      }
+    },
+    {
+      "anchor_id": "a06",
+      "page": 72,
+      "chapter": "Chapter 2",
+      "section": "2.2",
+      "anchor_text": "This discrepancy can be attributed to the biased sampling method as well as the use of primarily closed-ended questions",
+      "strategies": {
+        "A": [
+          {
+            "chunk_id": "openstax-pds-2025:p072:fixed:c002",
+            "chars": 499,
+            "chapter": "Chapter 2",
+            "section": "2.2",
+            "text": "favored Republican voters. As a consequence, the poll predicted a victory for Republican nominee Alf Landon. However, the actual outcome was a landslide win for Franklin D. Roosevelt (Lusinchi, 2012). This discrepancy can be attributed to the biased sampling method as well as the use of primarily closed-ended questions, which may not have accurately captured the opinions of all voters.\n\nAn example of a biased survey question in a survey conducted by a shampoo company might be \"Do you prefer our"
+          }
+        ],
+        "B": [
+          {
+            "chunk_id": "openstax-pds-2025:p072:para:c002",
+            "chars": 699,
+            "chapter": "Chapter 2",
+            "section": "2.2",
+            "text": "This discrepancy can be attributed to the biased sampling method as well as the use of primarily closed-ended questions, which may not have accurately captured the opinions of all voters.\n\nAn example of a biased survey question in a survey conducted by a shampoo company might be \"Do you prefer our brand of shampoo over cheaper alternatives?\" This question is biased because it assumes that the respondent prefers the company's brand over others. A more unbiased and accurate question would be \"What factors do you consider when choosing a shampoo brand?\" This allows for a more detailed and accurate response. The biased question could have led to inflated results in favor of the company's brand."
+          }
+        ],
+        "C": [
+          {
+            "chunk_id": "openstax-pds-2025:p072:para:c002",
+            "chars": 699,
+            "chapter": "Chapter 2",
+            "section": "2.2",
+            "text": "This discrepancy can be attributed to the biased sampling method as well as the use of primarily closed-ended questions, which may not have accurately captured the opinions of all voters.\n\nAn example of a biased survey question in a survey conducted by a shampoo company might be \"Do you prefer our brand of shampoo over cheaper alternatives?\" This question is biased because it assumes that the respondent prefers the company's brand over others. A more unbiased and accurate question would be \"What factors do you consider when choosing a shampoo brand?\" This allows for a more detailed and accurate response. The biased question could have led to inflated results in favor of the company's brand."
+          }
+        ]
+      }
+    },
+    {
+      "anchor_id": "a07",
+      "page": 87,
+      "chapter": "Chapter 2",
+      "section": "2.4",
+      "anchor_text": "MAR (missing at random) data is missing data related to other variables",
+      "strategies": {
+        "A": [
+          {
+            "chunk_id": "openstax-pds-2025:p087:fixed:c002",
+            "chars": 500,
+            "chapter": "Chapter 2",
+            "section": "2.4",
+            "text": "stion, and so there is missing data for income, but this is not related to the variables being collected related to driving habits.\n\nMAR (missing at random) data is missing data related to other variables but not to any unknown or unmeasured variables. As an example, during data collection, a survey is sent to respondents and the survey asks about loneliness. One of the questions asks about memory retention. Some older respondents might skip this question since they may be unwilling to share thi"
+          }
+        ],
+        "B": [
+          {
+            "chunk_id": "openstax-pds-2025:p087:para:c002",
+            "chars": 600,
+            "chapter": "Chapter 2",
+            "section": "2.4",
+            "text": "MAR (missing at random) data is missing data related to other variables but not to any unknown or unmeasured variables. As an example, during data collection, a survey is sent to respondents and the survey asks about loneliness. One of the questions asks about memory retention. Some older respondents might skip this question since they may be unwilling to share this type of information. The likelihood of missing data for loneliness factors is related to age (older respondents). Thus, the missing data is related to an observed variable of age but not directly related to loneliness measurements."
+          }
+        ],
+        "C": [
+          {
+            "chunk_id": "openstax-pds-2025:p087:para:c002",
+            "chars": 600,
+            "chapter": "Chapter 2",
+            "section": "2.4",
+            "text": "MAR (missing at random) data is missing data related to other variables but not to any unknown or unmeasured variables. As an example, during data collection, a survey is sent to respondents and the survey asks about loneliness. One of the questions asks about memory retention. Some older respondents might skip this question since they may be unwilling to share this type of information. The likelihood of missing data for loneliness factors is related to age (older respondents). Thus, the missing data is related to an observed variable of age but not directly related to loneliness measurements."
+          }
+        ]
+      }
+    },
+    {
+      "anchor_id": "a08",
+      "page": 98,
+      "chapter": "Chapter 2",
+      "section": "2.5",
+      "anchor_text": "Lossless compression aims to reduce file size without removing any data.",
+      "strategies": {
+        "A": [
+          {
+            "chunk_id": "openstax-pds-2025:p098:fixed:c006",
+            "chars": 499,
+            "chapter": "Chapter 2",
+            "section": "2.5",
+            "text": "ression reduces the size of data by permanently extracting particular data that is considered irrelevant or redundant. This method can significantly decrease file sizes, but it also results in a loss of some data. Lossy compression is often utilized for multimedia files and images, where slight modifications in quality may not be noticeable to the human eye. Examples of lossy compression include MP3 and JPEG.\n• Lossless compression aims to reduce file size without removing any data. This method"
+          }
+        ],
+        "B": [
+          {
+            "chunk_id": "openstax-pds-2025:p098:para:c006",
+            "chars": 760,
+            "chapter": "Chapter 2",
+            "section": "2.5",
+            "text": "• Lossless compression aims to reduce file size without removing any data. This method achieves compression by finding patterns and redundancies in the data and representing them more efficiently. This allows for the reconstruction of the original data without any loss in quality. Lossless compression is commonly used for text and numerical data, where every piece of information is crucial. Examples of lossless compression include ZIP, RAR, and PNG.\n\nThere are several methods of data lossless compression, including Huffman coding. Huffman coding works by assigning shorter binary codes to the most frequently used characters or symbols in a given dataset and longer codes to less frequently used characters, as shown in Figure 2.4. This results in a more"
+          }
+        ],
+        "C": [
+          {
+            "chunk_id": "openstax-pds-2025:p098:para:c006",
+            "chars": 760,
+            "chapter": "Chapter 2",
+            "section": "2.5",
+            "text": "• Lossless compression aims to reduce file size without removing any data. This method achieves compression by finding patterns and redundancies in the data and representing them more efficiently. This allows for the reconstruction of the original data without any loss in quality. Lossless compression is commonly used for text and numerical data, where every piece of information is crucial. Examples of lossless compression include ZIP, RAR, and PNG.\n\nThere are several methods of data lossless compression, including Huffman coding. Huffman coding works by assigning shorter binary codes to the most frequently used characters or symbols in a given dataset and longer codes to less frequently used characters, as shown in Figure 2.4. This results in a more"
+          }
+        ]
+      }
+    },
+    {
+      "anchor_id": "a09",
+      "page": 388,
+      "chapter": "Chapter 8",
+      "section": "8.1",
+      "anchor_text": "individuals maintain control over the decisions regarding the collection and use of their data",
+      "strategies": {
+        "A": [
+          {
+            "chunk_id": "openstax-pds-2025:p388:fixed:c002",
+            "chars": 500,
+            "chapter": "Chapter 8",
+            "section": "8.1",
+            "text": "hat individuals maintain control over the decisions regarding the collection and use of their data.\n\nFor example, if someone is using a fitness tracking app, they may want to track their daily steps and heart rate but not their location or sleep patterns. They should have the autonomy to choose which data points they want to collect and which ones they do not. Similarly, individuals should also have the autonomy to choose the method of data collection they are most comfortable with. For some, ma"
+          }
+        ],
+        "B": [
+          {
+            "chunk_id": "openstax-pds-2025:p388:para:c001",
+            "chars": 659,
+            "chapter": "Chapter 8",
+            "section": "8.1",
+            "text": "Data collection is an essential practice in many fields, and those performing the data collection are responsible for adhering to the highest ethical standards so that the best interest of every any party affected by the project is maintained. These standards include respecting individuals’ privacy, accurately representing data, and disclosing collection intentions. First and foremost, it is important to ensure that data is used appropriately within the boundaries of the collected data’s purpose and that individual autonomy is respected—in other words, that individuals maintain control over the decisions regarding the collection and use of their data."
+          }
+        ],
+        "C": [
+          {
+            "chunk_id": "openstax-pds-2025:p388:para:c001",
+            "chars": 659,
+            "chapter": "Chapter 8",
+            "section": "8.1",
+            "text": "Data collection is an essential practice in many fields, and those performing the data collection are responsible for adhering to the highest ethical standards so that the best interest of every any party affected by the project is maintained. These standards include respecting individuals’ privacy, accurately representing data, and disclosing collection intentions. First and foremost, it is important to ensure that data is used appropriately within the boundaries of the collected data’s purpose and that individual autonomy is respected—in other words, that individuals maintain control over the decisions regarding the collection and use of their data."
+          }
+        ]
+      }
+    },
+    {
+      "anchor_id": "a10",
+      "page": 400,
+      "chapter": "Chapter 8",
+      "section": "8.2",
+      "anchor_text": "Explainable AI (XAI)—a set of processes, methodologies, and techniques",
+      "strategies": {
+        "A": [
+          {
+            "chunk_id": "openstax-pds-2025:p400:fixed:c004",
+            "chars": 500,
+            "chapter": "Chapter 8",
+            "section": "8.2",
+            "text": "etworks and AI. Explainable AI (XAI)—a set of processes, methodologies, and techniques designed to make artificial intelligence (AI) models, particularly complex ones like deep learning models, more understandable and interpretable to humans—facilitates interpretability in this case.\n4. Human oversight. Whenever practical, humans should observe and evaluate how the model is performing. If the dataset is very large, then samples can be pulled and examined for consistency.\n5. Metrics. Certain meas"
+          }
+        ],
+        "B": [
+          {
+            "chunk_id": "openstax-pds-2025:p400:para:c003",
+            "chars": 725,
+            "chapter": "Chapter 8",
+            "section": "8.2",
+            "text": "3. Interpretability. Understanding how outcomes are related to the features of the data can help determine if bias is present and lead to corrections. This may be difficult if the algorithm is very complex, especially when the model involves neural networks and AI. Explainable AI (XAI)—a set of processes, methodologies, and techniques designed to make artificial intelligence (AI) models, particularly complex ones like deep learning models, more understandable and interpretable to humans—facilitates interpretability in this case.\n4. Human oversight. Whenever practical, humans should observe and evaluate how the model is performing. If the dataset is very large, then samples can be pulled and examined for consistency."
+          }
+        ],
+        "C": [
+          {
+            "chunk_id": "openstax-pds-2025:p400:para:c003",
+            "chars": 725,
+            "chapter": "Chapter 8",
+            "section": "8.2",
+            "text": "3. Interpretability. Understanding how outcomes are related to the features of the data can help determine if bias is present and lead to corrections. This may be difficult if the algorithm is very complex, especially when the model involves neural networks and AI. Explainable AI (XAI)—a set of processes, methodologies, and techniques designed to make artificial intelligence (AI) models, particularly complex ones like deep learning models, more understandable and interpretable to humans—facilitates interpretability in this case.\n4. Human oversight. Whenever practical, humans should observe and evaluate how the model is performing. If the dataset is very large, then samples can be pulled and examined for consistency."
+          }
+        ]
+      }
+    }
+  ]
+}

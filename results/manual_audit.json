@@ -1,0 +1,440 @@
+{
+  "audit_metadata": {
+    "auditor": "Vũ Trí Dũng (author / student 2A202603478)",
+    "audit_date": "2026-11-13",
+    "bias_and_scope_disclosure": [
+      "Manual labels were assigned by the lab author (Vũ Trí Dũng) rather than an independent third-party annotator, introducing potential self-evaluation bias despite anchoring scores to explicit chunk text and pre-registered evidence clauses.",
+      "Grounding quality measures whether top-3 retrieved chunks contain sufficient verbatim evidence to support a faithful, traceable answer; it does NOT evaluate end-to-end LLM generation accuracy (no LLM answer generator is part of this ingestion benchmark)."
+    ],
+    "coherence_rubric": {
+      "0": "Cut mid-idea or missing essential subject/predicate so standalone meaning is broken or misleading.",
+      "1": "Partially understandable, but truncated at boundaries, retains unrelated trailing fragment, or misses antecedent/closing context.",
+      "2": "Self-contained and coherent semantic unit with intact sentence/paragraph boundaries."
+    },
+    "grounding_rubric": {
+      "0": "Top-3 retrieved chunks lack the evidence required to answer the question.",
+      "1": "Top-3 retrieved chunks contain partial evidence only (missing a required clause, item, or condition).",
+      "2": "Top-3 retrieved chunks contain complete evidence to answer accurately and trace back to exact source/page/section."
+    }
+  },
+  "summary_by_strategy": {
+    "A": {
+      "coherence": {
+        "n_anchors": 10,
+        "counts": {"0": 3, "1": 7, "2": 0},
+        "mean_score_out_of_2": 0.7
+      },
+      "metadata_usefulness_test": {
+        "accurate_and_complete_hits": "15/15",
+        "errors": 0,
+        "test_filter_compliance": "2/2",
+        "dev_filter_compliance": "2/3",
+        "overall_filter_compliance": "4/5"
+      },
+      "grounding_quality_test": {
+        "n_questions": 5,
+        "counts": {"0": 0, "1": 4, "2": 1},
+        "mean_score_out_of_2": 1.2
+      }
+    },
+    "B": {
+      "coherence": {
+        "n_anchors": 10,
+        "counts": {"0": 0, "1": 2, "2": 8},
+        "mean_score_out_of_2": 1.8
+      },
+      "metadata_usefulness_test": {
+        "accurate_and_complete_hits": "15/15",
+        "errors": 0,
+        "test_filter_compliance": "2/2",
+        "dev_filter_compliance": "2/3",
+        "overall_filter_compliance": "4/5"
+      },
+      "grounding_quality_test": {
+        "n_questions": 5,
+        "counts": {"0": 0, "1": 1, "2": 4},
+        "mean_score_out_of_2": 1.8
+      }
+    },
+    "C": {
+      "coherence": {
+        "n_anchors": 10,
+        "counts": {"0": 0, "1": 2, "2": 8},
+        "mean_score_out_of_2": 1.8
+      },
+      "metadata_usefulness_test": {
+        "accurate_and_complete_hits": "15/15",
+        "errors": 0,
+        "test_filter_compliance": "2/2",
+        "dev_filter_compliance": "3/3",
+        "overall_filter_compliance": "5/5"
+      },
+      "grounding_quality_test": {
+        "n_questions": 5,
+        "counts": {"0": 0, "1": 1, "2": 4},
+        "mean_score_out_of_2": 1.8
+      }
+    }
+  },
+  "coherence_audit": [
+    {
+      "anchor_id": "a01",
+      "page": 20,
+      "section": "1.1",
+      "ratings": {
+        "A": {
+          "chunk_ids": ["openstax-pds-2025:p020:fixed:c002"],
+          "score": 1,
+          "reason": "Conveys interdisciplinary domain overlap and Figure 1.2 caption, but starts mid-sentence ('data.') and cuts the cell-phone example mid-word ('list of p')."
+        },
+        "B": {
+          "chunk_ids": ["openstax-pds-2025:p020:para:c001"],
+          "score": 2,
+          "reason": "Starts cleanly ('To be more specific...') and finishes cleanly at the complete sentence referencing Figure 1.2."
+        },
+        "C": {
+          "chunk_ids": ["openstax-pds-2025:p020:para:c001"],
+          "score": 2,
+          "reason": "Identical paragraph chunk to B; self-contained and preserves complete boundaries."
+        }
+      }
+    },
+    {
+      "anchor_id": "a02",
+      "page": 21,
+      "section": "1.1",
+      "ratings": {
+        "A": {
+          "chunk_ids": ["openstax-pds-2025:p021:fixed:c001"],
+          "score": 1,
+          "reason": "Preserves the problem-definition & data-collection definition sentences, but opens with orphaned Anaconda phrase ('of the time each, depending on the job.') and cuts mid-word ('domain exper')."
+        },
+        "B": {
+          "chunk_ids": ["openstax-pds-2025:p021:para:c001"],
+          "score": 2,
+          "reason": "Keeps heading together with full explanation and survey example through sentence end ('once it is collected.')."
+        },
+        "C": {
+          "chunk_ids": ["openstax-pds-2025:p021:para:c001"],
+          "score": 2,
+          "reason": "Identical paragraph chunk to B; completely coherent."
+        }
+      }
+    },
+    {
+      "anchor_id": "a03",
+      "page": 23,
+      "section": "1.2",
+      "ratings": {
+        "A": {
+          "chunk_ids": ["openstax-pds-2025:p023:fixed:c002"],
+          "score": 0,
+          "reason": "Opens mid-word ('hich hit several weeks earlier') dropping which storm ('Hurricane Charley') was studied, and terminates mid-phrase ('at different times of the')."
+        },
+        "B": {
+          "chunk_ids": ["openstax-pds-2025:p023:para:c001"],
+          "score": 2,
+          "reason": "Complete paragraph preserving both Hurricane Charley backstory and Walmart Pop-Tarts logistics decision."
+        },
+        "C": {
+          "chunk_ids": ["openstax-pds-2025:p023:para:c001"],
+          "score": 2,
+          "reason": "Identical paragraph chunk to B; intact semantic unit."
+        }
+      }
+    },
+    {
+      "anchor_id": "a04",
+      "page": 28,
+      "section": "1.3",
+      "ratings": {
+        "A": {
+          "chunk_ids": ["openstax-pds-2025:p028:fixed:c002"],
+          "score": 1,
+          "reason": "Quantitative data definition and examples are readable, but opening is cut mid-word ('ew data') and qualitative definition is cut mid-verb ('generally describe')."
+        },
+        "B": {
+          "chunk_ids": ["openstax-pds-2025:p028:para:c002"],
+          "score": 2,
+          "reason": "Attaches 'Types of Data' heading to full contrasting explanations of quantitative vs qualitative data."
+        },
+        "C": {
+          "chunk_ids": ["openstax-pds-2025:p028:para:c002"],
+          "score": 2,
+          "reason": "Identical paragraph chunk to B; complete and self-contained."
+        }
+      }
+    },
+    {
+      "anchor_id": "a05",
+      "page": 68,
+      "section": "2.1",
+      "ratings": {
+        "A": {
+          "chunk_ids": ["openstax-pds-2025:p068:fixed:c000"],
+          "score": 1,
+          "reason": "Learning Outcomes bullet list is readable, but starts with dangling fragment ('business success.') and cuts the anchor definition sentence mid-word ('accurately conveyin')."
+        },
+        "B": {
+          "chunk_ids": ["openstax-pds-2025:p068:para:c001"],
+          "score": 2,
+          "reason": "Contains the entire opening definition paragraph of Section 2.1 without truncated boundaries."
+        },
+        "C": {
+          "chunk_ids": ["openstax-pds-2025:p068:para:c001"],
+          "score": 2,
+          "reason": "Identical paragraph chunk to B; self-contained."
+        }
+      }
+    },
+    {
+      "anchor_id": "a06",
+      "page": 72,
+      "section": "2.2",
+      "ratings": {
+        "A": {
+          "chunk_ids": ["openstax-pds-2025:p072:fixed:c002"],
+          "score": 1,
+          "reason": "States the Literary Digest poll outcome and discrepancy causes cleanly, but starts mid-sentence ('favored Republican voters.') and cuts the shampoo survey example mid-quote ('Do you prefer our')."
+        },
+        "B": {
+          "chunk_ids": ["openstax-pds-2025:p072:para:c002"],
+          "score": 1,
+          "reason": "Sentence boundaries are clean and shampoo example is intact, yet splitting the >800-char previous paragraph left an anaphoric opening ('This discrepancy can be attributed...') without its Literary Digest antecedent."
+        },
+        "C": {
+          "chunk_ids": ["openstax-pds-2025:p072:para:c002"],
+          "score": 1,
+          "reason": "Identical chunk to B; same split-antecedent limitation."
+        }
+      }
+    },
+    {
+      "anchor_id": "a07",
+      "page": 87,
+      "section": "2.4",
+      "ratings": {
+        "A": {
+          "chunk_ids": ["openstax-pds-2025:p087:fixed:c002"],
+          "score": 0,
+          "reason": "Starts mid-word ('stion') from prior MCAR paragraph and cuts the MAR survey example mid-word ('share thi') before explaining the dependency on age."
+        },
+        "B": {
+          "chunk_ids": ["openstax-pds-2025:p087:para:c002"],
+          "score": 2,
+          "reason": "Preserves the complete MAR definition plus full loneliness/memory/age example in one standalone paragraph."
+        },
+        "C": {
+          "chunk_ids": ["openstax-pds-2025:p087:para:c002"],
+          "score": 2,
+          "reason": "Identical chunk to B; complete semantic unit."
+        }
+      }
+    },
+    {
+      "anchor_id": "a08",
+      "page": 98,
+      "section": "2.5",
+      "ratings": {
+        "A": {
+          "chunk_ids": ["openstax-pds-2025:p098:fixed:c006"],
+          "score": 0,
+          "reason": "Starts mid-word ('ression reduces') stripping 'Lossy compression' subject, and terminates at 'This method' right after defining lossless goal."
+        },
+        "B": {
+          "chunk_ids": ["openstax-pds-2025:p098:para:c006"],
+          "score": 1,
+          "reason": "Preserves the complete Lossless compression bullet and examples (ZIP, RAR, PNG), but page-level ingestion cuts the trailing Huffman sentence at the bottom of PDF page 98 ('This results in a more')."
+        },
+        "C": {
+          "chunk_ids": ["openstax-pds-2025:p098:para:c006"],
+          "score": 1,
+          "reason": "Identical chunk to B; same page-98 bottom sentence truncation."
+        }
+      }
+    },
+    {
+      "anchor_id": "a09",
+      "page": 388,
+      "section": "8.1",
+      "ratings": {
+        "A": {
+          "chunk_ids": ["openstax-pds-2025:p388:fixed:c002"],
+          "score": 1,
+          "reason": "Conveys the fitness tracking autonomy example clearly, though opening cuts mid-word ('hat individuals maintain') and closing cuts mid-word ('For some, ma')."
+        },
+        "B": {
+          "chunk_ids": ["openstax-pds-2025:p388:para:c001"],
+          "score": 2,
+          "reason": "Full paragraph defining ethical standards and individual autonomy with intact start/end boundaries (note: 'every any party' is present verbatim in the source OpenStax PDF)."
+        },
+        "C": {
+          "chunk_ids": ["openstax-pds-2025:p388:para:c001"],
+          "score": 2,
+          "reason": "Identical chunk to B; complete semantic unit."
+        }
+      }
+    },
+    {
+      "anchor_id": "a10",
+      "page": 400,
+      "section": "8.2",
+      "ratings": {
+        "A": {
+          "chunk_ids": ["openstax-pds-2025:p400:fixed:c004"],
+          "score": 1,
+          "reason": "Explainable AI definition and item 4 (Human oversight) are readable, but start cuts mid-word ('etworks and AI.') removing item 3 heading and end cuts item 5 mid-word ('Certain meas')."
+        },
+        "B": {
+          "chunk_ids": ["openstax-pds-2025:p400:para:c003"],
+          "score": 2,
+          "reason": "Cleanly groups numbered items 3 (Interpretability + XAI) and 4 (Human oversight) from beginning to period."
+        },
+        "C": {
+          "chunk_ids": ["openstax-pds-2025:p400:para:c003"],
+          "score": 2,
+          "reason": "Identical chunk to B; intact semantic unit."
+        }
+      }
+    }
+  ],
+  "test_grounding_and_metadata_audit": [
+    {
+      "question_id": "q16",
+      "gold_page": 29,
+      "gold_section": "1.3",
+      "filter_requested": null,
+      "strategies": {
+        "A": {
+          "grounding_score": 2,
+          "grounding_reason": "Rank 1 ('nominal since... You may argue that the semester could') plus Rank 3 ('commended). You may argue that the semester could have chronological ordering...') bridge cleanly via 50-char overlap to supply 100% of required clauses, though split across two non-adjacent top-3 chunks.",
+          "metadata_accurate_hits": "3/3",
+          "metadata_notes": "All 3 hits accurately report p.29, Chapter 1, section 1.3, book_page 19."
+        },
+        "B": {
+          "grounding_score": 2,
+          "grounding_reason": "Rank 1 (p029:para:c001) holds the full single-chunk evidence explaining nominal default vs chronological time-series ordinal interpretation; Rank 2 adds the 4-attribute example setup on p.28.",
+          "metadata_accurate_hits": "3/3",
+          "metadata_notes": "All 3 hits accurately report p.29/28/27, Chapter 1, section 1.3, book_page 19/18/17."
+        },
+        "C": {
+          "grounding_score": 2,
+          "grounding_reason": "Identical to B (no chapter filter requested on q16); Rank 1 completely grounds the answer.",
+          "metadata_accurate_hits": "3/3",
+          "metadata_notes": "Identical provenance accuracy to B."
+        }
+      }
+    },
+    {
+      "question_id": "q17",
+      "gold_page": 78,
+      "gold_section": "2.3",
+      "filter_requested": null,
+      "strategies": {
+        "A": {
+          "grounding_score": 1,
+          "grounding_reason": "Rank 1 and Rank 2 answer the first part ('list of DataFrame objects'), but Step 6 mentioning pandas.to_numeric() fell outside top-3.",
+          "metadata_accurate_hits": "3/3",
+          "metadata_notes": "All 3 hits accurately report p.78, Chapter 2, section 2.3, book_page 68."
+        },
+        "B": {
+          "grounding_score": 2,
+          "grounding_reason": "Rank 1 (Step 2) provides 'list of DataFrame objects' and Rank 3 (Step 6) provides 'to_numeric()' from pandas, cleanly grounding both parts of the question in top-3 despite the multi-chunk split.",
+          "metadata_accurate_hits": "3/3",
+          "metadata_notes": "All 3 hits accurately report p.78, Chapter 2, section 2.3, book_page 68."
+        },
+        "C": {
+          "grounding_score": 2,
+          "grounding_reason": "Identical to B (no filter requested); both return type and to_numeric() function are fully grounded in top-3.",
+          "metadata_accurate_hits": "3/3",
+          "metadata_notes": "Identical provenance accuracy to B."
+        }
+      }
+    },
+    {
+      "question_id": "q18",
+      "gold_page": 100,
+      "gold_section": "2.5",
+      "filter_requested": {"chapter": "Chapter 2"},
+      "strategies": {
+        "A": {
+          "grounding_score": 1,
+          "grounding_reason": "Rank 1 gives chunk metadata reassembly rationale and Rank 2 gives benefits 1-3, but mid-list truncation at 500 chars drops benefit #4 ('Flexibility') completely out of top-3.",
+          "metadata_accurate_hits": "3/3",
+          "filter_compliant": true,
+          "metadata_notes": "All 3 hits belong to p.100, Chapter 2, section 2.5, book_page 90 (naturally stayed in-chapter even without SQL filter)."
+        },
+        "B": {
+          "grounding_score": 2,
+          "grounding_reason": "Rank 1 & Rank 2 cover chunk metadata and reassembly; Rank 3 preserves all 4 enumerated benefits (Increased speed, Better utilization of resources, Increased fault tolerance, Flexibility) without truncation.",
+          "metadata_accurate_hits": "3/3",
+          "filter_compliant": true,
+          "metadata_notes": "All 3 hits belong to p.100, Chapter 2, section 2.5, book_page 90."
+        },
+        "C": {
+          "grounding_score": 2,
+          "grounding_reason": "Identical top-3 evidence to B; all metadata rationale and 4 benefits are grounded.",
+          "metadata_accurate_hits": "3/3",
+          "filter_compliant": true,
+          "metadata_notes": "All 3 hits strictly satisfy SQL filter chapter='Chapter 2' on p.100, section 2.5."
+        }
+      }
+    },
+    {
+      "question_id": "q19",
+      "gold_page": 395,
+      "gold_section": "8.1",
+      "filter_requested": null,
+      "strategies": {
+        "A": {
+          "grounding_score": 1,
+          "grounding_reason": "Rank 1 captures HIPAA compliance for medical PII, but top-3 stops at Step 5 and misses Step 7 explaining when access must be revoked.",
+          "metadata_accurate_hits": "3/3",
+          "metadata_notes": "All 3 hits have valid metadata (r1-r2 on p.395, r3 on p.391, Chapter 8, section 8.1); note chunk p.391 represents off-page context drift."
+        },
+        "B": {
+          "grounding_score": 1,
+          "grounding_reason": "Rank 2 confirms HIPAA compliance and Rank 1 shows Steps 3-4, but Rank 3 pulled general regulatory compliance (US Privacy Act) from p.388 instead of Step 7 revocation criteria on p.395.",
+          "metadata_accurate_hits": "3/3",
+          "metadata_notes": "All 3 hits accurately record p.395/388, Chapter 8, section 8.1, book_page 385/378; section/page metadata immediately exposes the p.388 drift."
+        },
+        "C": {
+          "grounding_score": 1,
+          "grounding_reason": "Identical to B (no filter requested); answers HIPAA regulation accurately but cannot ground access revocation conditions from top-3.",
+          "metadata_accurate_hits": "3/3",
+          "metadata_notes": "Identical provenance accuracy to B."
+        }
+      }
+    },
+    {
+      "question_id": "q20",
+      "gold_page": 411,
+      "gold_section": "8.3",
+      "filter_requested": {"chapter": "Chapter 8"},
+      "strategies": {
+        "A": {
+          "grounding_score": 1,
+          "grounding_reason": "Rank 1 has Reason 1 and cuts Reason 2 mid-sentence; Rank 2 & Rank 3 give non-public permission rule and Reason 4, but skipping chunk c002 leaves Reason 2 incomplete and Reason 3 missing its label/definition.",
+          "metadata_accurate_hits": "3/3",
+          "filter_compliant": true,
+          "metadata_notes": "All 3 hits belong to p.411, Chapter 8, section 8.3, book_page 401."
+        },
+        "B": {
+          "grounding_score": 2,
+          "grounding_reason": "Rank 1 provides the non-public data permission & citation requirement; Rank 2 & Rank 3 preserve all 4 numbered attribution reasons intact.",
+          "metadata_accurate_hits": "3/3",
+          "filter_compliant": true,
+          "metadata_notes": "All 3 hits belong to p.411, Chapter 8, section 8.3, book_page 401."
+        },
+        "C": {
+          "grounding_score": 2,
+          "grounding_reason": "Identical top-3 evidence to B under enforced chapter='Chapter 8' SQL filter; completely grounds both parts.",
+          "metadata_accurate_hits": "3/3",
+          "filter_compliant": true,
+          "metadata_notes": "All 3 hits strictly satisfy SQL filter chapter='Chapter 8' on p.411, section 8.3."
+        }
+      }
+    }
+  ]
+}
+

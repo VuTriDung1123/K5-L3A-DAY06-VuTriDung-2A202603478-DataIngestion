@@ -1,0 +1,230 @@
+{
+  "run_metadata": {
+    "run_timestamp_utc": "2026-11-13T08:32:27.755426+00:00",
+    "corpus_pages_loaded": 107,
+    "embedding": {
+      "provider": "openrouter",
+      "upstream_provider": "OpenAI",
+      "model_name": "openai/text-embedding-3-small",
+      "resolved_model": "text-embedding-3-small",
+      "dimensions": 1536,
+      "doc_query_symmetry": "symmetric (identical normalization & prompt formatting; no task prefix)",
+      "doc_api_calls": 20,
+      "query_api_calls": 20,
+      "doc_texts_embedded": 1166,
+      "query_texts_embedded": 20,
+      "doc_tokens": 112723,
+      "query_tokens": 455,
+      "doc_cost_usd": 0.00225446,
+      "query_cost_usd": 9.1e-06,
+      "total_cost_usd": 0.00226356,
+      "embed_seconds": 82.29
+    },
+    "query_embed_seconds_20q": 19.393,
+    "provider_fallback_log": [
+      {
+        "attempted_provider": "openai-direct (text-embedding-3-small)",
+        "status": "failed_quota",
+        "error": "HTTP 429 Too Many Requests on direct OpenAI key prior to experiment."
+      },
+      {
+        "attempted_provider": "google-genai (gemini-embedding-001, Free Tier)",
+        "status": "failed_rate_limit",
+        "error": "429 RESOURCE_EXHAUSTED: Free Tier limit 100 embed_content requests/min hit during Strategy A batch 3."
+      },
+      {
+        "selected_provider": "openrouter (openai/text-embedding-3-small, 1536d)",
+        "status": "succeeded",
+        "note": "Switched prior to completing any strategy run; all three strategies A, B, and C use this identical model."
+      }
+    ],
+    "vector_store": {
+      "engine": "PostgreSQL + pgvector",
+      "database": "day6_lab",
+      "postgresql_version": "16.16 (Debian 16.16-1.pgdg12+1)",
+      "pgvector_version": "0.8.7",
+      "metric": "cosine",
+      "search_mode": "exact"
+    },
+    "packages": {
+      "psycopg": "3.3.8",
+      "pypdf": "6.21.4",
+      "python-dotenv": "1.2.4",
+      "requests": "2.34.2"
+    },
+    "idempotency_and_pruning": {
+      "strategy_checked": "B",
+      "count_before_reingest": 516,
+      "count_after_reingest": 516,
+      "zero_duplicates": true,
+      "stale_cleanup_test_initial": 2,
+      "stale_cleanup_test_after_shrink": 1,
+      "stale_cleanup_deleted_rows": 1
+    }
+  },
+  "strategy_metrics": {
+    "A": {
+      "config": {
+        "chunking": "fixed_size",
+        "size": 500,
+        "overlap": 50,
+        "filter": "none"
+      },
+      "chunk_stats": {
+        "count": 650,
+        "total_chars": 300942,
+        "min_chars": 50,
+        "p50_chars": 500,
+        "p90_chars": 500,
+        "max_chars": 500,
+        "mean_chars": 463.0
+      },
+      "persisted_count": 650,
+      "ingest_seconds": 37.972,
+      "embed_seconds": 36.023,
+      "embed_tokens": 59290,
+      "doc_embed_cost_usd": 0.0011858,
+      "query_embed_cost_usd": 9.1e-06,
+      "total_cost_usd": 0.0011949,
+      "search_seconds_20q": 1.0229
+    },
+    "B": {
+      "config": {
+        "chunking": "by_paragraph",
+        "max_size": 800,
+        "overlap": 0,
+        "filter": "none"
+      },
+      "chunk_stats": {
+        "count": 516,
+        "total_chars": 273236,
+        "min_chars": 37,
+        "p50_chars": 548,
+        "p90_chars": 764,
+        "max_chars": 800,
+        "mean_chars": 529.5
+      },
+      "persisted_count": 516,
+      "ingest_seconds": 29.72,
+      "embed_seconds": 27.905,
+      "embed_tokens": 53433,
+      "doc_embed_cost_usd": 0.00106866,
+      "query_embed_cost_usd": 9.1e-06,
+      "total_cost_usd": 0.00107776,
+      "search_seconds_20q": 0.6989
+    },
+    "C": {
+      "config": {
+        "chunking": "by_paragraph",
+        "max_size": 800,
+        "overlap": 0,
+        "filter": "pre-supplied metadata filter when provided"
+      },
+      "chunk_stats": {
+        "count": 516,
+        "total_chars": 273236,
+        "min_chars": 37,
+        "p50_chars": 548,
+        "p90_chars": 764,
+        "max_chars": 800,
+        "mean_chars": 529.5
+      },
+      "persisted_count": 516,
+      "ingest_seconds_incremental_reuse_b": 0.825,
+      "ingest_seconds_standalone_equivalent": 29.8,
+      "embed_seconds_standalone_equivalent": 27.905,
+      "embed_tokens_standalone_equivalent": 53433,
+      "doc_embed_cost_usd_incremental": 0.0,
+      "doc_embed_cost_usd_standalone_equivalent": 0.00106866,
+      "query_embed_cost_usd": 9.1e-06,
+      "total_cost_usd_standalone_equivalent": 0.00107776,
+      "search_seconds_20q": 0.771
+    }
+  },
+  "retrieval_summary": {
+    "A:dev": {
+      "strategy": "A",
+      "split": "dev",
+      "n": 15,
+      "hit_at_1_count": 4,
+      "hit_at_1_ratio": "4/15",
+      "hit_at_1_pct": 26.7,
+      "evidence_hit_at_3_count": 5,
+      "evidence_hit_at_3_ratio": "5/15",
+      "evidence_hit_at_3_pct": 33.3,
+      "multi_chunk_union_hit3_ratio": "14/15",
+      "evidence_split_errors": 9,
+      "filter_compliance": "2/3"
+    },
+    "A:test": {
+      "strategy": "A",
+      "split": "test",
+      "n": 5,
+      "hit_at_1_count": 0,
+      "hit_at_1_ratio": "0/5",
+      "hit_at_1_pct": 0.0,
+      "evidence_hit_at_3_count": 0,
+      "evidence_hit_at_3_ratio": "0/5",
+      "evidence_hit_at_3_pct": 0.0,
+      "multi_chunk_union_hit3_ratio": "1/5",
+      "evidence_split_errors": 1,
+      "filter_compliance": "2/2"
+    },
+    "B:dev": {
+      "strategy": "B",
+      "split": "dev",
+      "n": 15,
+      "hit_at_1_count": 10,
+      "hit_at_1_ratio": "10/15",
+      "hit_at_1_pct": 66.7,
+      "evidence_hit_at_3_count": 11,
+      "evidence_hit_at_3_ratio": "11/15",
+      "evidence_hit_at_3_pct": 73.3,
+      "multi_chunk_union_hit3_ratio": "15/15",
+      "evidence_split_errors": 4,
+      "filter_compliance": "2/3"
+    },
+    "B:test": {
+      "strategy": "B",
+      "split": "test",
+      "n": 5,
+      "hit_at_1_count": 1,
+      "hit_at_1_ratio": "1/5",
+      "hit_at_1_pct": 20.0,
+      "evidence_hit_at_3_count": 1,
+      "evidence_hit_at_3_ratio": "1/5",
+      "evidence_hit_at_3_pct": 20.0,
+      "multi_chunk_union_hit3_ratio": "4/5",
+      "evidence_split_errors": 3,
+      "filter_compliance": "2/2"
+    },
+    "C:dev": {
+      "strategy": "C",
+      "split": "dev",
+      "n": 15,
+      "hit_at_1_count": 10,
+      "hit_at_1_ratio": "10/15",
+      "hit_at_1_pct": 66.7,
+      "evidence_hit_at_3_count": 11,
+      "evidence_hit_at_3_ratio": "11/15",
+      "evidence_hit_at_3_pct": 73.3,
+      "multi_chunk_union_hit3_ratio": "15/15",
+      "evidence_split_errors": 4,
+      "filter_compliance": "3/3"
+    },
+    "C:test": {
+      "strategy": "C",
+      "split": "test",
+      "n": 5,
+      "hit_at_1_count": 1,
+      "hit_at_1_ratio": "1/5",
+      "hit_at_1_pct": 20.0,
+      "evidence_hit_at_3_count": 1,
+      "evidence_hit_at_3_ratio": "1/5",
+      "evidence_hit_at_3_pct": 20.0,
+      "multi_chunk_union_hit3_ratio": "4/5",
+      "evidence_split_errors": 3,
+      "filter_compliance": "2/2"
+    }
+  }
+}

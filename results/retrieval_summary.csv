@@ -1,0 +1,7 @@
+strategy,split,n,hit_at_1_ratio,hit_at_1_pct,evidence_hit_at_3_ratio,evidence_hit_at_3_pct,multi_chunk_union_hit3_ratio,evidence_split_errors,filter_compliance
+A,dev,15,4/15,26.7,5/15,33.3,14/15,9,2/3
+A,test,5,0/5,0.0,0/5,0.0,1/5,1,2/2
+B,dev,15,10/15,66.7,11/15,73.3,15/15,4,2/3
+B,test,5,1/5,20.0,1/5,20.0,4/5,3,2/2
+C,dev,15,10/15,66.7,11/15,73.3,15/15,4,3/3
+C,test,5,1/5,20.0,1/5,20.0,4/5,3,2/2
